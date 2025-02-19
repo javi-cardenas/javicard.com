@@ -9,6 +9,7 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
+  pathPrefix: "/javicard.com", // GitHub repo name
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
