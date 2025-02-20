@@ -1,5 +1,5 @@
-// Step 1: Import React
-import * as React from "react";
+import * as React from "react"; // Step 1: Import React
+import { SEO } from "../components/seo";
 
 // Step 2: Define your component with TypeScript types
 const IndexPage = (): JSX.Element => {
@@ -11,8 +11,8 @@ const IndexPage = (): JSX.Element => {
   );
 };
 
-// Head component for setting the page title and additional metadata
-export const Head = () => <title>Home Page</title>;
-
 // Step 3: Export your component
 export default IndexPage;
+
+// Head component for setting the page title and additional metadata
+export const Head = () => <SEO />;
