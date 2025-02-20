@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
   pathPrefix: "/javicard.com", // GitHub repo name
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-google-gtag`, // Google Analytics
       options: {
         trackingIds: ["G-DVMEV7VN1R"],
         gtagConfig: {
