@@ -6,7 +6,7 @@ const IndexPage = (): JSX.Element => {
   return (
     <main>
       <h1>Welcome to my Gatsby site!</h1>
-      <p>I am making this by following the Gatsby Tutorial.</p>
+      <p>I am making this by following the Gatsby Tutorial!</p>
     </main>
   );
 };
