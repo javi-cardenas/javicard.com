@@ -11,7 +11,7 @@ const IndexPage = (): JSX.Element => {
   );
 };
 
-// Head component for setting the page title
+// Head component for setting the page title and additional metadata
 export const Head = () => <title>Home Page</title>;
 
 // Step 3: Export your component
