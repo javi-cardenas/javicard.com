@@ -6,6 +6,19 @@ import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
+  {
+    settings: {
+      react: {
+        version: "detect", // Automatically detects the installed React version
+      },
+    },
+  },
+  {
+    rules: {
+      "react/no-unescaped-entities": "off",
+    },
+  },
+  { ignores: [] },
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { files: ["**/*.js"], languageOptions: { sourceType: "script" } },
   { languageOptions: { globals: globals.browser } },
