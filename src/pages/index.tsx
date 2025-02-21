@@ -15,4 +15,4 @@ const IndexPage = (): JSX.Element => {
 export default IndexPage;
 
 // Head component for setting the page title and additional metadata
-export const Head = () => <SEO />;
+export const Head = () => <SEO title="Home Page" />;
