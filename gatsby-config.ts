@@ -36,10 +36,18 @@ const config: GatsbyConfig = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-image",
+    "gatsby-plugin-image", // add an image from a URL
+    "gatsby-plugin-sharp", // handles actual image processing
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
+    },
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -48,14 +56,6 @@ const config: GatsbyConfig = {
         path: "./src/images/",
       },
       __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: "./src/pages/",
-      },
-      __key: "pages",
     },
   ],
 };
