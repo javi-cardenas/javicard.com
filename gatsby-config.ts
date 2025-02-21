@@ -4,8 +4,6 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Javi Cardenas's Personal Website`,
     description: `Software engineer and casual video game player. This is my digital garden.`,
-    author: { name: "Javi Cardenas" },
-    image: `/gatsby-icon.png`,
     siteUrl: `https://javicard.com`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -38,6 +36,9 @@ const config: GatsbyConfig = {
     },
     "gatsby-plugin-image", // add an image from a URL
     "gatsby-plugin-sharp", // handles actual image processing
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -46,9 +47,6 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -56,6 +54,13 @@ const config: GatsbyConfig = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `./blog`,
+      },
     },
   ],
 };
