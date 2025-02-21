@@ -30,6 +30,12 @@ const config: GatsbyConfig = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`, // favicon or browser icon
+      options: {
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",

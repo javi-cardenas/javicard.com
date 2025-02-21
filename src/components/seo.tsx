@@ -37,7 +37,6 @@ export const SEO: React.FC<SEOProps> = ({
       <meta property="og:description" content={seo.description} />
       <meta property="og:image" content={seo.image} />
       <meta property="og:url" content={seo.url} />
-      <link rel="icon" href="/gatsby-icon.png" />
       {children}
     </>
   );
