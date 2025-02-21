@@ -1,13 +1,13 @@
 import * as React from "react"; // Step 1: Import React
 import { SEO } from "../components/seo";
+import Layout from "../components/layout";
 
 // Step 2: Define your component with TypeScript types
 const IndexPage = (): JSX.Element => {
   return (
-    <main>
-      <h1>Welcome to my Gatsby site!</h1>
-      <p>I am making this by following the Gatsby Tutorial!</p>
-    </main>
+    <Layout pageTitle="Home Page">
+      <p>I am making this by following the Gatsby Tutorial.</p>
+    </Layout>
   );
 };
 
