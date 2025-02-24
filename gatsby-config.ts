@@ -36,8 +36,8 @@ const config: GatsbyConfig = {
     },
     "gatsby-plugin-image", // add an image from a URL
     "gatsby-plugin-sharp", // handles actual image processing
+    "gatsby-plugin-mdx", // Markdown and JSX
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
