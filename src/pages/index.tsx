@@ -17,13 +17,11 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        {/* <p>
+          Designing and developing backend services, DevOps best practices, and
+          scalable data pipelines. In my free time I enjoy exercising, playing
+          videogames with friends, and watching the English Premier League.
+        </p> */}
       </div>
     </header>
   );
@@ -33,8 +31,10 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title='Home'
+      // title={`${siteConfig.title}`}
+      // description="Description will go into a meta tag in <head />"
+      >
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 ---
-
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
@@ -23,9 +22,19 @@ Generate a new Docusaurus site using the **classic template**.
 
 The classic template will automatically be added to your project after you run the command:
 
+<!-- 
 ```bash
 npm init docusaurus@latest my-website classic
+``` -->
+
+```bash
+npx create-docusaurus@latest docusaurus classic --typescript --git-strategy shallow --package-manager npm
 ```
+**--git-strategy** flag
+
+*shallow*: Use this if you want a clean initial commit to start your project history.
+
+*copy*: Use this if you're adding documentation to an existing project.
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
