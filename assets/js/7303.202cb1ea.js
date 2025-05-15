@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjavicard_com=self.webpackChunkjavicard_com||[]).push([[7303],{7303:(c,e,a)=>{a.d(e,{createInfoServices:()=>r.v});var r=a(8525);a(3579)}}]);
