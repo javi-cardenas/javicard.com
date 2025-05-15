@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjavicard_com=self.webpackChunkjavicard_com||[]).push([[1903],{9531:a=>{a.exports=JSON.parse('{"blogBasePath":"/javicard.com/blog","blogTitle":"Blog","authorsListPath":"/javicard.com/blog/authors"}')}}]);
