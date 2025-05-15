@@ -31,6 +31,12 @@ const config: Config = {
     locales: ['en'],
   },
 
+  // In order for Mermaid code blocks in Markdown to work,
+  // you also need to enable the Remark plugin with this option
+  markdown: {
+    mermaid: true,
+  },
+
   presets: [
     [
       'classic',
@@ -64,16 +70,29 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    '@docusaurus/theme-live-codeblock',
+    '@docusaurus/theme-mermaid',
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     // TODO
     // image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true
+    },
+    docs: {
+      sidebar: {hideable: true}
+    },
     navbar: {
       title: 'Home',
       // logo: {
       //   alt: 'My Site Logo',
       //   src: 'img/favicon.png',
       // },
+      hideOnScroll: true,
       items: [
         {to: '/projects', label: 'Projects', position: 'left'},
         {
@@ -126,6 +145,14 @@ const config: Config = {
         },
       ],
       //copyright: `Copyright © ${new Date().getFullYear()} Javi Cardenas`,
+    },
+    // plugin customization
+    liveCodeBlock: {
+      /**
+       * The position of the live playground, above or under the editor
+       * Possible values: "top" | "bottom"
+       */
+      playgroundPosition: 'bottom',
     },
     prism: {
       theme: prismThemes.github,
