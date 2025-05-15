@@ -13,7 +13,7 @@ const config: Config = {
   url: 'https://javicard.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/javicard.com/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -73,6 +73,13 @@ const config: Config = {
   plugins: [
     '@docusaurus/theme-live-codeblock',
     '@docusaurus/theme-mermaid',
+  ],
+
+  scripts: [
+    {
+      src: 'https://javicard.statuspage.io/embed/script.js',
+      async: true, // Add this if the script should load asynchronously
+    },
   ],
 
   themeConfig: {
@@ -140,6 +147,12 @@ const config: Config = {
             {
               label: 'Blog',
               to: '/blog',
+            },
+            {
+              label: 'Status',
+              href: 'https://javicard.statuspage.io/',
+              target: '_blank',
+              rel: 'noopener noreferrer',
             },
           ],
         },
