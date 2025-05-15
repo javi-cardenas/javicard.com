@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkjavicard_com=self.webpackChunkjavicard_com||[]).push([[5978],{9801:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/javicard.com/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
