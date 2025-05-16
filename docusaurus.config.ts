@@ -37,6 +37,11 @@ const config: Config = {
     mermaid: true,
   },
 
+  plugins: [
+    '@docusaurus/theme-live-codeblock',
+    '@docusaurus/theme-mermaid',
+  ],
+
   presets: [
     [
       'classic',
@@ -68,11 +73,6 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-  ],
-
-  plugins: [
-    '@docusaurus/theme-live-codeblock',
-    '@docusaurus/theme-mermaid',
   ],
 
   scripts: [
@@ -108,7 +108,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         // {
         //   href: 'https://github.com/javi-cardenas/javicard.com',
         //   label: 'GitHub',
@@ -157,7 +157,7 @@ const config: Config = {
           ],
         },
       ],
-      //copyright: `Copyright © ${new Date().getFullYear()} Javi Cardenas`,
+      // copyright: `Copyright © ${new Date().getFullYear()} Javi Cardenas`,
     },
     // plugin customization
     liveCodeBlock: {
