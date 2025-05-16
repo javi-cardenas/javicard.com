@@ -157,7 +157,7 @@ const config: Config = {
           ],
         },
       ],
-      // copyright: `Copyright © ${new Date().getFullYear()} Javi Cardenas`,
+      copyright: `Copyright © ${new Date().getFullYear()} Javi Cardenas. All rights reserved.`,
     },
     // plugin customization
     liveCodeBlock: {

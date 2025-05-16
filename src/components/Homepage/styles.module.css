@@ -12,8 +12,8 @@
 /* Hero Section */
 .hero {
   padding: 6rem 0 4rem;
-  background: linear-gradient(to right, var(--ifm-color-primary-dark), var(--ifm-color-primary));
-  color: white;
+  background: var(--ifm-color-primary);
+  color: black;
   text-align: center;
 }
 
@@ -29,9 +29,8 @@
 }
 
 .heroName {
-  color: white;
+  color: black;
   font-weight: 700;
-  border-bottom: 4px solid white;
 }
 
 .heroTagline {
@@ -56,12 +55,6 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
-}
-
-.heroButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
 }
 
 /* Sections */
@@ -174,6 +167,7 @@
 
 .projectLink:hover {
   background-color: var(--ifm-color-primary-dark);
+  color: white;
   text-decoration: none;
 }
 
@@ -271,7 +265,8 @@
 }
 
 .contactLink:hover {
-  background-color: var(--ifm-color-primary-dark);
+  background-color: var(--ifm-color-primary-darker);
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
