@@ -158,30 +158,30 @@ const HomePage: React.FC = () => {
 
   // Sample documentation categories - replace with your own
   const docCategories: DocCardProps[] = [
-    {
-      title: 'React Patterns',
-      description: 'Common React patterns and best practices I use in my projects.',
-      icon: '⚛️',
-      url: '/docs/react-patterns',
-    },
-    {
-      title: 'TypeScript Tips',
-      description: 'Useful TypeScript tips, tricks, and configuration settings.',
-      icon: '🔷',
-      url: '/docs/typescript-tips',
-    },
-    {
-      title: 'Dev Environment Setup',
-      description: 'My development environment configuration and tools.',
-      icon: '🛠️',
-      url: '/docs/dev-environment',
-    },
-    {
-      title: 'Deployment Strategies',
-      description: 'Various deployment strategies and CI/CD workflows I use.',
-      icon: '🚀',
-      url: '/docs/deployment',
-    },
+    // {
+    //   title: 'React Patterns',
+    //   description: 'Common React patterns and best practices I use in my projects.',
+    //   icon: '⚛️',
+    //   url: '/docs/react-patterns',
+    // },
+    // {
+    //   title: 'TypeScript Tips',
+    //   description: 'Useful TypeScript tips, tricks, and configuration settings.',
+    //   icon: '🔷',
+    //   url: '/docs/typescript-tips',
+    // },
+    // {
+    //   title: 'Dev Environment Setup',
+    //   description: 'My development environment configuration and tools.',
+    //   icon: '🛠️',
+    //   url: '/docs/dev-environment',
+    // },
+    // {
+    //   title: 'Deployment Strategies',
+    //   description: 'Various deployment strategies and CI/CD workflows I use.',
+    //   icon: '🚀',
+    //   url: '/docs/deployment',
+    // },
   ];
 
   return (
@@ -222,7 +222,7 @@ const HomePage: React.FC = () => {
               ))}
             </div>
             <div className={styles.viewAllContainer}>
-              <Link to="/docs" className={styles.viewAllLink}>
+              <Link to="/docs/intro" className={styles.viewAllLink}>
                 View All Topics
               </Link>
             </div>
