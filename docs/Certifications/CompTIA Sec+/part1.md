@@ -6,20 +6,20 @@ sidebar_position: 1
 
 ## 1.1 Compare and contrast various types of security controls
 
-| Controls and Types | Preventive         | Deterrent      | Detective            | Corrective          | Compensating | Directive |
-|:-------------------|:-------------------|:---------------|:---------------------|:--------------------|:-------------|:----------|
-| Technical          | Firewall           | Splash screen  | System logs          | Backup recovery     | Block instead of patch | File storage policies |
-| Managerial         | On-boarding policy | Demotion       | Review login reports | Issue reporting     | Separation of duties   | Compliance policies |
-| Operational        | Guard checkpoint   | Reception desk | Property patrols     | Contact authorities | Require multiple security staff | Security policy training |
-| Physical           | Door lock          | Warning signs  | Motion detectors     | Fire estinguisher   | Power generator | Sign: Authorized Personnel Only |
+| Controls and Types | Preventive         | Deterrent      | Directive                       | Detective            | Corrective          | Compensating                    |
+|:-------------------|:-------------------|:---------------|:--------------------------------|:---------------------|:--------------------|:--------------------------------|
+| Technical          | Firewall           | Splash screen  | File storage policies           | System logs          | Backup recovery     | Block instead of patch          |
+| Operational        | Guard checkpoint   | Reception desk | Security policy training        | Property patrols     | Contact authorities | Require multiple security staff |
+| Managerial         | On-boarding policy | Demotion       | Compliance policies             | Review login reports | Issue reporting     | Separation of duties            |
+| Physical           | Door lock          | Warning signs  | Sign: Authorized Personnel Only | Motion detectors     | Fire estinguisher   | Power generator                 |
 
 ### Control Categories
 - Technical controls
     - controls implemented by **systems** (firewalls, anti-virus)
-- Managerial controls
-    - **administrative** controls associated with security design and implementation (security policies, standard operating procedures)
 - Operational controls
     - controls implemnted by **people** instead of systems (security guards, awareness programs)
+- Managerial controls
+    - **administrative** controls associated with security design and implementation (security policies, standard operating procedures)
 - Physical controls
     - limit **physical** access (physical locks, badge readers)
 
@@ -28,6 +28,10 @@ sidebar_position: 1
     - blocks access to a resource
 - Deterrent (Pre-Process)
     - discourage an intrusion attempt
+- Directive (Pre-Process)
+    - direct a person towards security compliance
+    - **relatively weak security control i.e. Do This, Please...**
+    - Ex. Don't store data with PII locally.
 - Detective (Active-Process)
     - identify and log an intrusion attempt
 - Corrective (Post-Process)
@@ -35,10 +39,6 @@ sidebar_position: 1
 - Compensating (Post-Process)
     - control using other means and typically temporary
     - **Ex. backup power generator while the main power is down**
-- Directive (Pre-Process)
-    - direct a person towards security compliance
-    - **relatively weak security control i.e. Do This, Please...**
-    - Ex. Don't store data with PII locally.
 
 ## 1.2 Summarize fundamental security concepts
 
@@ -113,9 +113,47 @@ flowchart LR
     classDef invisible fill:none,stroke:none
     class AuthFlow invisible
 ```
-**- Authenticating systems:**
+- Authenticating systems:
+    - Put a digitially signed certificate on a system / device
+    - Access to a VPN from authorized devices
+    - Management software can validate the end device
 
-**- Authenticating models:**
+**Certificate Authority (CA):** most organizations maintain their own CAs
+- The organizations creates a certificate for a device
+- And digitally signs the certificate with the organization's CA
+- The certificate can now be included on a device as an authentication factor
+    - The CA's digital signature is used to validate the certificate
+
+- Authorization models:
+    - What do they have access to?
+    - Roles, Organizations, Tasks
+
+### Gap Analysis
+- Where you are vs where you want to be
+- Determine end goal by working towards a baseline
+    - NIST Special Publication 800-171 Revision 2, Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations
+    - ISO/IEC 27001, Information security management systems
+- Compare and Contrast
+    - evaluate existing systems and identify weaknesses based on the most effective processes
+    - examine broad security categories and break them into smaller segments
+- Analysis and Report
+    - formal description of the current state
+    - recommendations for meeting the baseline
+
+![Gap Analysis Table](/img/gap-analysis-table.jpg)
+
+### Zero Trust
+- Holistic approach to network security
+    - covers every device, process, and person
+    - you have to authenticate each time you want to access a resource
+- Planes of operation
+    - Data Plane
+        - Processes the frames, packets, and network data
+        - Processing, forwarding, trunking, encrypting, NAT
+    - Control Plane
+        - Manage actions of data plane, define policies and rules
+        - Determines how packets should be forwarded
+        - Routing tables, session tables, NAT tables
 
 ## 1.3 Explain the importance of change management processes and the impact to security
 
