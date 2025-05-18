@@ -24,6 +24,7 @@ sidebar_position: 1
 
 - Data Profiling
     - Identify, detect, quantify data quality problems
+    - Use tools like OpenRefine (previously GoogleRefine)
 
 - Data Cleaning (Wrangling)
     - Standardize, normalize data
@@ -88,3 +89,21 @@ What are the questions you’re trying to answer? Do you even need this table / 
     - in relational databases: integrity constraints (ICs), often in the form of denials
 - Timeliness
     - data change over time and is the data still appropriate?
+
+# Data Validation and Transformation
+Data validation ensures that data matches defined rules; whereas data transformations are used to convert from one structure or format to another. 
+
+Regular expressions are a popular and widespread formalism used in both validation and transformation. A regular expression (or regex) can be used to match patterns in text data and to extract data from the text.
+
+## Link to regular expression cheatsheat
+
+
+![Data Warehouse Organization](/img/data-warehouse-organization.jpg)
+
+# Data Aggregation
+- Quantitative
+    - sum, mean, median, mode, min, max
+- Count
+    - converts ordinal or nominal data into quantitative data
+- Binning
+    - discretizes continuous quantitative data into ordinal or nominal data
