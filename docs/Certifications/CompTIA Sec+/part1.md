@@ -113,6 +113,7 @@ flowchart LR
     classDef invisible fill:none,stroke:none
     class AuthFlow invisible
 ```
+
 - Authenticating systems:
     - Put a digitially signed certificate on a system / device
     - Access to a VPN from authorized devices
